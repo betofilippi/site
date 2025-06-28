@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ["brazilian-values"],
   reactStrictMode: true,
   images: {
     remotePatterns: [

@@ -90,7 +90,7 @@ export function Header() {
                           {link.label}
                         </span>
                       </span>
-                      <div className="absolute top-0 left-7 bg-primary/20 text-primary text-[8px] font-bold px-1 py-px rounded-md whitespace-nowrap flex items-center gap-1">
+                      <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-primary/20 text-primary text-[8px] font-bold px-1 py-px rounded-md whitespace-nowrap flex items-center gap-1">
                         Em breve!
                         <Sparkles className="h-2.5 w-2.5" />
                       </div>
@@ -130,7 +130,7 @@ export function Header() {
                   rel="noopener noreferrer"
                   aria-label="Instagram"
                 >
-                  <Instagram className="h-8 w-8" />
+                  <Instagram className="h-6 w-6" />
                 </a>
               </Button>
 
@@ -167,7 +167,7 @@ export function Header() {
                         <Icon className="h-5 w-5" />
                         {link.label}
                       </span>
-                      <div className="absolute top-0 left-7 bg-primary/20 text-primary text-[8px] font-bold px-1 py-px rounded-md whitespace-nowrap flex items-center gap-1">
+                      <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-primary/20 text-primary text-[8px] font-bold px-1 py-px rounded-md whitespace-nowrap flex items-center gap-1">
                         Em breve!
                         <Sparkles className="h-2.5 w-2.5" />
                       </div>
@@ -207,7 +207,7 @@ export function Header() {
                 aria-label="Instagram"
                 className="flex items-center gap-3 text-lg font-medium text-muted-foreground hover:text-primary"
               >
-                <Instagram className="h-8 w-8" />
+                <Instagram className="h-7 w-7" />
                 <span>Siga no Instagram</span>
               </a>
             </div>
