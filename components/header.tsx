@@ -130,7 +130,7 @@ export function Header() {
                   rel="noopener noreferrer"
                   aria-label="Instagram"
                 >
-                  <Instagram className="h-6 w-6" />
+                  <Instagram className="h-8 w-8" />
                 </a>
               </Button>
 
@@ -207,7 +207,7 @@ export function Header() {
                 aria-label="Instagram"
                 className="flex items-center gap-3 text-lg font-medium text-muted-foreground hover:text-primary"
               >
-                <Instagram className="h-7 w-7" />
+                <Instagram className="h-8 w-8" />
                 <span>Siga no Instagram</span>
               </a>
             </div>
