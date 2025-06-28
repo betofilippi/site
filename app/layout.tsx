@@ -8,7 +8,6 @@ import { Footer } from "@/components/footer"
 import { Suspense } from "react"
 import Script from "next/script"
 import { TsparticlesBackground } from "@/components/tsparticles-background"
-import { ClientOnlyChatDiagnostics } from "@/components/client-only-chat-diagnostics"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
@@ -17,6 +16,10 @@ export const metadata: Metadata = {
   title: "NXT - Mobilidade Elétrica para o Futuro",
   description:
     "Descubra a linha de veículos elétricos da NXT. Inovação, sustentabilidade e tecnologia para a mobilidade urbana.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     title: "NXT - Mobilidade Elétrica para o Futuro",
     description: "Veículos elétricos, autopropelidos e sustentáveis. Conheça nossos modelos.",
@@ -55,7 +58,6 @@ export default function RootLayout({
           src="https://cdn.respond.io/webchat/widget/widget.js?cId=de6a4909faa5544e1b5b347d83f551f"
           strategy="afterInteractive"
         />
-        <ClientOnlyChatDiagnostics />
       </body>
     </html>
   )
