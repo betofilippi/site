@@ -3,20 +3,7 @@
 import { useState, useEffect, type ElementType } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import {
-  Menu,
-  X,
-  Instagram,
-  Sparkles,
-  Bike,
-  Wrench,
-  Store,
-  Info,
-  Mail,
-  ShoppingCart,
-  Settings,
-  Smartphone,
-} from "lucide-react"
+import { Menu, X, Instagram, Sparkles, Bike, Wrench, Store, Info, Mail, ShoppingCart, Smartphone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { LogoIcon } from "./logo-icon"
@@ -33,7 +20,7 @@ const navLinks: {
   { href: "/sobre", label: "Sobre", icon: Info },
   { href: "/contato", label: "Contato", icon: Mail },
   { href: "#", label: "loja.app", disabled: true, icon: ShoppingCart },
-  { href: "#", label: "assistencia.app", disabled: true, icon: Settings },
+  { href: "#", label: "assistencia.app", disabled: true, icon: Wrench },
   { href: "#", label: "nxt.app", disabled: true, icon: Smartphone },
 ]
 

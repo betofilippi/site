@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   description:
     "Descubra a linha de veículos elétricos da NXT. Inovação, sustentabilidade e tecnologia para a mobilidade urbana.",
   icons: {
-    icon: "/icon.png",
-    apple: "/apple-icon.png",
+    icon: "/icon.png?v=2",
+    apple: "/apple-icon.png?v=2",
   },
   openGraph: {
     title: "NXT - Mobilidade Elétrica para o Futuro",

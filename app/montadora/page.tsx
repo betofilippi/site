@@ -1,6 +1,6 @@
 "use client"
 import { CircuitBoardIcon as Circuit, Leaf, Lightbulb } from "lucide-react"
-import CanvaVideo from "@/components/canvas-video"
+import { NativeVideoPlayer } from "@/components/native-video-player"
 
 export default function Montadora() {
   return (
@@ -81,12 +81,12 @@ export default function Montadora() {
         {/* Video Section */}
         <div className="bg-card p-8 rounded-lg shadow-md">
           <h3
-            className="text-[24px] font-normal text-foreground mb-4"
+            className="text-[24px] font-normal text-foreground mb-6"
             style={{ fontFamily: "'SF Pro Display', system-ui, -apple-system, sans-serif" }}
           >
             Vídeo Institucional
           </h3>
-          <CanvaVideo designId="DAGfe7HzATE/w4KN83HnHxKR1LPlmh8nDg" title="Vídeo Institucional NXT" />
+          <NativeVideoPlayer src="/videos/montadora-institucional.mp4" title="Vídeo Institucional NXT" />
         </div>
       </div>
     </div>
