@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
 import { motion } from "framer-motion"
 import { MapPin, Wrench, Award } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -15,17 +14,25 @@ export default function HomePage() {
 
   return (
     <div className="text-foreground overflow-x-hidden">
-      {/* Hero Section */}
+      {/* Hero Section with Video */}
       <section className="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Sem%20EWET%C3%ADtulo-1.jpg-eassTrNYBVuCdFFJFrEKK4nr5Hbr3Z.jpeg"
-            alt="Mulher pilotando uma scooter elétrica NXT em uma cidade moderna"
-            fill
-            className="object-cover"
-            priority
-            quality={90}
-          />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover opacity-40"
+            poster="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Sem%20EWET%C3%ADtulo-1.jpg-eassTrNYBVuCdFFJFrEKK4nr5Hbr3Z.jpeg"
+          >
+            <source src="/videos/hero-video.mp4" type="video/mp4" />
+            {/* Fallback para navegadores que não suportam vídeo */}
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Sem%20EWET%C3%ADtulo-1.jpg-eassTrNYBVuCdFFJFrEKK4nr5Hbr3Z.jpeg"
+              alt="Mulher pilotando uma scooter elétrica NXT em uma cidade moderna"
+              className="w-full h-full object-cover opacity-40"
+            />
+          </video>
           <div className="absolute inset-0 bg-black/60" />
         </div>
         <div className="relative z-10 p-4 flex flex-col items-center">
@@ -41,7 +48,7 @@ export default function HomePage() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.6 }}
-            className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground"
+            className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-white/90"
           >
             NXT é Liberdade Elétrica em Duas Rodas. Líder Pioneira dos Autopropelidos no Brasil.
           </motion.p>

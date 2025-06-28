@@ -7,8 +7,6 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Suspense } from "react"
 import Script from "next/script"
-import { ElectricBackground } from "@/components/electric-background"
-import { LightningEffects } from "@/components/lightning-effects"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
@@ -45,8 +43,6 @@ export default function RootLayout({
     <html lang="pt-BR" suppressHydrationWarning className="dark">
       <body className={`${inter.variable} font-sans antialiased`}>
         <Suspense fallback={null}>
-          <ElectricBackground />
-          <LightningEffects />
           <div className="relative z-10 flex flex-col min-h-screen">
             <Header />
             <main className="flex-grow">{children}</main>
