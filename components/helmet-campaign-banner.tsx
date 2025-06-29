@@ -28,7 +28,7 @@ export function HelmetCampaignBanner() {
             <PartyPopper className="w-4 h-4" />
             <span>GRANDE NOVIDADE!</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-3 bg-gradient-to-r from-primary to-yellow-300 bg-clip-text text-transparent">
+          <h2 className="font-bold text-foreground bg-gradient-to-r from-primary to-yellow-300 bg-clip-text text-transparent mt-0 mb-1.5 text-4xl leading-[3rem]">
             10 mil capacetes grátis!
           </h2>
           <p className="text-lg text-muted-foreground mb-2">

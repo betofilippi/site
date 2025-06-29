@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-4">
-              <LogoIcon className="h-8 text-foreground dark:text-primary" />
+              <LogoIcon className="h-8" />
             </Link>
             <p className="text-muted-foreground text-sm max-w-xs">
               Revolucionando a mobilidade urbana com veículos elétricos inovadores e sustentáveis.

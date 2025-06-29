@@ -26,12 +26,6 @@ export default function HomePage() {
             poster="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Sem%20EWET%C3%ADtulo-1.jpg-eassTrNYBVuCdFFJFrEKK4nr5Hbr3Z.jpeg"
           >
             <source src="/videos/hero-video.mp4" type="video/mp4" />
-            {/* Fallback para navegadores que não suportam vídeo */}
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Sem%20EWET%C3%ADtulo-1.jpg-eassTrNYBVuCdFFJFrEKK4nr5Hbr3Z.jpeg"
-              alt="Mulher pilotando uma scooter elétrica NXT em uma cidade moderna"
-              className="w-full h-full object-cover opacity-40"
-            />
           </video>
           <div className="absolute inset-0 bg-black/60" />
         </div>
